@@ -1,0 +1,50 @@
+<input type="number" name="nombre" id="nombre">
+
+<input type="button" name="button" id="button1" value="afficher nombre">
+<script>
+   
+</script>
+
+<script>
+    
+    alert("Le jeu consiste à donner un nombre qui sera comparé à un autre nombre qui est généré automatiquement ");
+    var a = Math.floor(Math.random() * Math.floor(100));
+
+    for (var i = 0; i < 6; i++) {
+        
+
+        var b = prompt("donner un nombre");
+        var b1 = parseInt(b, 10);
+
+
+        if (a == b1) {
+            alert("bravo le nombre que vous donnez est égale aux nombre générez");
+            var z = i+1;
+            alert("vous avez réussie au bout de " + z + "essai");
+            break
+
+
+        }
+        else {
+            if (a > b1) {
+                alert("le nombre que vous avez donnée est inferieur au nombre générez:");
+                var z = i+1;
+                alert(" Vous essayez aux nombres de:\t" + z + "\tveillez ressayez svp");
+                if (i == 5) {
+                    alert("vous avez épuisez le nombre de chance qui vous a été donnez veillez réessayer svp");
+                }
+
+            }
+            else {
+                alert("le nombre que vous avez donnée est suprieur au nombre génére");
+                var z = i+1;
+                alert(" Vous essayez aux nombres de" + z + "veillez ressayez svp");
+                if (i == 5) {
+                    alert("vous avez épuisez le nombre de chance qui vous a été donnez veillez réessayer svp");
+                }
+
+            }
+
+        }
+    }
+</script>
